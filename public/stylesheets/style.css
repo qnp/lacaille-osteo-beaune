@@ -1,0 +1,448 @@
+@import 'fonts.css';
+body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  font-family: 'GrmndPReg', serif;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  color: #fff;
+}
+a:not(.rdv-button),
+.sec-text {
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, currentColor 0%, currentColor 100%);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 1px;
+}
+a:not(.rdv-button):hover,
+.sec-text:hover {
+  background-size: 100% 1px;
+}
+a.rdv-button {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  font-size: 15px;
+  background-color: #fff;
+  color: #37f;
+  font-weight: bold;
+  width: 210px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+a.rdv-button:hover {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+b {
+  font-family: 'GrmndPBold', serif;
+  font-weight: normal;
+}
+bm {
+  font-weight: bold;
+}
+h1 {
+  font-family: 'GrmndPBold', serif;
+  font-weight: normal;
+  font-size: 53.5px;
+  margin: 0;
+}
+h2 {
+  font-family: 'GrmndPBold', serif;
+  font-weight: normal;
+  font-size: 40px;
+}
+h3 {
+  font-family: 'GrmndPBold', serif;
+  font-weight: normal;
+  font-size: 22px;
+  margin: 22px 0 22px 0;
+}
+section > * {
+  padding: 0 24px;
+}
+.small {
+  font-size: 18px;
+}
+.small p:first-child {
+  margin-top: 0;
+}
+.fixed-size {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+#wrap-intro {
+  background: #37f;
+}
+#wrap-losteopathie-titre {
+  background: #eaf2fe;
+}
+#wrap-losteopathie-subsec1 {
+  background: #d9e7fd;
+}
+#wrap-losteopathie-subsec2 {
+  background: #eaf2fe;
+}
+#wrap-pour-qui {
+  background: #e0ffe3;
+}
+#wrap-quand-titre {
+  background: #d9e7fd;
+}
+#wrap-quand-subsec1 {
+  background: #eaf2fe;
+}
+#wrap-quand-subsec2 {
+  background: #d9e7fd;
+}
+#wrap-footer {
+  background: #1b1464;
+}
+.no-mrgn-top {
+  margin-top: 0;
+}
+.no-mrgn {
+  margin: 0;
+}
+#intro {
+  padding: 32px 32px 52px 32px;
+  background: #37f;
+  color: #fff;
+}
+#bande {
+  margin-bottom: 80px;
+  background: url("../images/logo.svg") no-repeat 50% 37%;
+  height: 125px;
+  display: flex;
+}
+#bande .head-title {
+  margin-top: 38px;
+  font-family: 'GrmndPBold', serif;
+  font-weight: normal;
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+}
+#bande .head-title:nth-child(2n+1) {
+  padding-right: 12%;
+}
+#bande .head-title:nth-child(2n+2) {
+  padding-left: 9%;
+}
+#intro-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#presentation {
+  width: 50%;
+  min-width: 430px;
+}
+#infos-wrapper {
+  width: calc(25% - 20px);
+  min-width: 240px;
+  float: left;
+}
+#map-wrapper {
+  margin-top: 4px;
+  width: calc(25% - 20px);
+  min-width: 240px;
+  float: left;
+}
+#map-wrapper #map {
+  width: 100%;
+  min-width: 255px;
+  height: 379px;
+  background: #888;
+  color: #37f;
+}
+#gotop {
+  position: fixed;
+  width: 125px;
+  text-align: center;
+  top: 90px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 998;
+}
+#wrap-wrap-menu {
+  width: 100%;
+}
+#wrap-menu {
+  background: #fff;
+  top: 0;
+  height: 47px;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#menu {
+  width: 1240px;
+  display: flex;
+  z-index: 1000;
+}
+#logo {
+  width: 10%;
+  text-align: center;
+}
+#logo img {
+  width: 49px;
+  height: 42px;
+}
+#buttons {
+  width: 80%;
+  padding-top: 8px;
+  display: flex;
+}
+#buttons .section {
+  width: 33.3%;
+  text-align: center;
+  font-family: 'GrmndPBold', serif;
+  font-weight: normal;
+}
+#buttons .section .fleche {
+  margin-right: 19px;
+}
+#buttons .section a {
+  color: #37f;
+  cursor: pointer;
+}
+#buttons .section a:hover {
+  text-decoration: none;
+  background-size: 0 2px;
+}
+#buttons .section .sec-text {
+  background-size: 0% 2px;
+}
+#buttons .section .sec-text:hover {
+  background-size: 100% 2px;
+}
+#losteopathie {
+  color: #37f;
+}
+#losteopathie .titre {
+  padding: 93px 0;
+  background: #eaf2fe;
+  text-align: center;
+}
+#losteopathie .subsec1 {
+  padding: 44px 0 57px;
+  background: #d9e7fd;
+  font-family: 'GrmndPBold', serif;
+  font-weight: normal;
+}
+#losteopathie .subsec1 p {
+  max-width: 744px;
+  margin: 0 auto;
+}
+#losteopathie .subsec2 {
+  padding: 55px 0 76px;
+  background: #eaf2fe;
+  font-size: 18px;
+}
+#losteopathie .subsec2 p {
+  max-width: 550px;
+  margin: 0 auto;
+}
+#pour-qui {
+  color: #0a8771;
+  background: #e0ffe3;
+}
+#pour-qui .titre {
+  padding: 122px 0 113px 0;
+  text-align: center;
+}
+#quand-consulter {
+  color: #37f;
+}
+#quand-consulter .titre {
+  padding: 93px 0;
+  background: #d9e7fd;
+  text-align: center;
+}
+#quand-consulter .subtitle {
+  text-align: center;
+}
+#quand-consulter .subsec1 {
+  padding: 44px 0 57px;
+  background: #eaf2fe;
+  font-family: 'GrmndPBold', serif;
+  font-weight: normal;
+}
+#quand-consulter .subsec1 p {
+  max-width: 730px;
+  margin: 0 auto;
+}
+#quand-consulter .subsec2 {
+  padding: 60px 0 56px;
+  background: #d9e7fd;
+}
+#quand-consulter .subsec2 .subtitle {
+  padding-bottom: 39px;
+}
+.content {
+  padding-left: 89px;
+  display: flex;
+}
+.content .col {
+  width: 50%;
+}
+.content .col .block {
+  margin-bottom: 75px;
+}
+.content .col .block h3,
+.content .col .block p {
+  margin: 0 0 0 41px;
+  width: 450px;
+}
+#footer {
+  padding: 60px;
+  color: #fff;
+  background: #1b1464;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+#footer img {
+  margin-top: -16px;
+  margin-right: 24px;
+}
+#footer #lou-hover {
+  margin-left: -160px;
+  opacity: 0;
+}
+#footer .block-foot .rdv-button {
+  margin-top: 20px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+}
+#footer .block-foot .rdv-button:hover {
+  color: #4281ff;
+  box-shadow: 0 2px 4px #000;
+}
+#footer .block-foot p {
+  margin: 2px 0 0;
+}
+#footer .block-foot .small {
+  margin-left: 50px;
+}
+#footer .block-foot .b {
+  width: 76px;
+  display: inline-block;
+  font-weight: bold;
+}
+#copyright {
+  opacity: 1;
+}
+.credits {
+  opacity: 0.2;
+}
+@media (max-width: 1240px) {
+  .fixed-size {
+    width: 100%;
+    padding: 0;
+    left: 0;
+  }
+  #intro #presentation-wrapper {
+    width: 33.3%;
+  }
+  #intro #presentation-wrapper #presentation {
+    width: 90%;
+  }
+  #intro #infos-map-wrapper {
+    width: 66.7%;
+  }
+  #menu {
+    width: 100%;
+  }
+  #menu #buttons .section {
+    width: 27%;
+  }
+  #menu #buttons .section:first-child {
+    width: 46%;
+  }
+  .content {
+    padding-left: 30px;
+  }
+  .content .col .block h3,
+  .content .col .block p {
+    width: 80%;
+  }
+  #footer img {
+    margin-right: 0;
+  }
+  #footer .block-foot .small {
+    margin-left: 0;
+  }
+  #gotop {
+    width: 10%;
+    min-width: 48px;
+  }
+  #intro-wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  #presentation {
+    width: 100%;
+    min-width: 0;
+  }
+  #infos-wrapper,
+  #map-wrapper {
+    width: calc(50% - 20px);
+  }
+}
+@media (max-width: 650px) {
+  #intro {
+    padding: 32px 24px 52px 24px;
+  }
+  #bande {
+    background-size: 60px;
+    background-position: 50% 50%;
+  }
+  #bande .head-title:nth-child(1) {
+    text-align: left;
+  }
+  #bande .head-title:nth-child(2) {
+    text-align: right;
+  }
+  #infos-wrapper,
+  #map-wrapper {
+    width: 100%;
+  }
+  .content {
+    flex-wrap: wrap;
+  }
+  .content .col {
+    width: 100%;
+  }
+  #footer #obf2 a:hover {
+    background-size: 0;
+  }
+  #footer img {
+    margin: 0;
+  }
+  #lou-hover {
+    display: none;
+  }
+  .fleche,
+  .what-is-it {
+    display: none;
+  }
+  #menu #buttons {
+    gap: 16px;
+  }
+  #menu #buttons .section:first-child {
+    width: 34%;
+  }
+}

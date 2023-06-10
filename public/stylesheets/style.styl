@@ -1,0 +1,462 @@
+@import 'fonts.css'
+
+mainblue = #37F
+lightblue = #D9E7FD
+light2blue = #EAF2FE
+thegreen = #0A8771
+lightgreen = #E0FFE3
+darkblue = #1B1464
+width1 = 1240px
+
+reg()
+	font-family 'GrmndPReg', serif
+
+bold()
+	font-family 'GrmndPBold', serif
+	font-weight normal
+
+light()
+	font-family 'GrmndPLight', serif
+
+small()
+	font-size 18px
+
+body
+	border 0
+	margin 0
+	padding 0
+	font-size 22px
+	reg()
+	text-rendering optimizelegibility
+	-webkit-font-smoothing antialiased
+	-moz-osx-font-smoothing grayscale
+
+a
+	color #FFF
+
+a:not(.rdv-button), .sec-text
+	text-decoration none
+	background-image linear-gradient(to bottom, currentColor 0%, currentColor 100%)
+	background-position 0 100%
+	background-repeat no-repeat
+	background-size 0 1px
+
+	&:hover
+		background-size 100% 1px
+
+a.rdv-button
+	text-decoration none
+	font-family Arial, sans-serif
+	border-radius 5px
+	box-shadow 0 2px 2px rgba(0, 0, 0, 0.2)
+	font-size 15px
+	background-color #FFF
+	color mainblue
+	font-weight bold
+	width 210px
+	height 40px
+	display flex
+	align-items center
+	justify-content center
+	transition all 0.2s ease-in-out
+
+	&:hover
+		box-shadow 0 2px 4px rgba(0, 0, 0, 0.4)
+
+b
+	bold()
+
+bm
+	font-weight bold
+
+h1
+	bold()
+	font-size 53.5px
+	margin 0
+
+h2
+	bold()
+	font-size 40px
+
+h3
+	bold()
+	font-size 22px
+	margin 22px 0 22px 0
+
+section > *
+	padding 0 24px
+
+.small
+	small()
+
+	p:first-child
+		margin-top 0
+
+.fixed-size
+	max-width width1
+	margin 0 auto
+
+#wrap-intro
+	background mainblue
+
+#wrap-losteopathie-titre
+	background light2blue
+
+#wrap-losteopathie-subsec1
+	background lightblue
+
+#wrap-losteopathie-subsec2
+	background light2blue
+
+#wrap-pour-qui
+	background lightgreen
+
+#wrap-quand-titre
+	background lightblue
+
+#wrap-quand-subsec1
+	background light2blue
+
+#wrap-quand-subsec2
+	background lightblue
+
+#wrap-footer
+	background darkblue
+
+.no-mrgn-top
+	margin-top 0
+
+.no-mrgn
+	margin 0
+
+#intro
+	padding 32px 32px 52px 32px
+	background mainblue
+	color #FFF
+
+#bande
+	margin-bottom 80px
+	background url('../images/logo.svg') no-repeat 50% 37%
+	height 125px
+	display flex
+
+	.head-title
+		margin-top 38px
+		bold()
+		width 50%
+		text-align center
+		box-sizing border-box
+
+		&:nth-child(2n+1)
+			padding-right 12%
+
+		&:nth-child(2n+2)
+			padding-left 9%
+
+#intro-wrapper
+	display flex
+	flex-wrap wrap
+	gap 20px
+
+#presentation
+	width 50%
+	min-width 430px
+
+#infos-wrapper
+	width calc(25% - 20px)
+	min-width 240px
+	float left
+
+#map-wrapper
+	margin-top 4px
+	width calc(25% - 20px)
+	min-width 240px
+	float left
+
+	#map
+		width 100%
+		min-width 255px
+		height 379px
+		background #888
+		color mainblue
+
+#gotop
+	position fixed
+	width 125px
+	text-align center
+	top 90px
+	cursor pointer
+	opacity 0
+	z-index 998
+
+#wrap-wrap-menu
+	width 100%
+
+#wrap-menu
+	background #FFF
+	top 0
+	height 47px
+	padding-top 12px
+	padding-bottom 8px
+	z-index 999
+	display flex
+	justify-content center
+	width 100%
+
+#menu
+	width width1
+	display flex
+	z-index 1000
+
+#logo
+	width 10%
+	text-align center
+
+	img
+		width 49px
+		height 42px
+
+#buttons
+	width 80%
+	padding-top 8px
+	display flex
+
+	.section
+		width 33.3%
+		text-align center
+		bold()
+
+		.fleche
+			margin-right 19px
+
+		a
+			color mainblue
+			cursor pointer
+
+			&:hover
+				text-decoration none
+				background-size 0 2px
+
+		.sec-text
+			background-size 0% 2px
+
+			&:hover
+				background-size 100% 2px
+
+#losteopathie
+	color mainblue
+
+	.titre
+		padding 93px 0
+		background light2blue
+		text-align center
+
+	.subsec1
+		padding 44px 0 57px
+		background lightblue
+		bold()
+
+		p
+			max-width 744px
+			margin 0 auto
+
+	.subsec2
+		padding 55px 0 76px
+		background light2blue
+		small()
+
+		p
+			max-width 550px
+			margin 0 auto
+
+#pour-qui
+	color thegreen
+	background lightgreen
+
+	.titre
+		padding 122px 0 113px 0
+		text-align center
+
+#quand-consulter
+	color mainblue
+
+	.titre
+		padding 93px 0
+		background lightblue
+		text-align center
+
+	.subtitle
+		text-align center
+
+	.subsec1
+		padding 44px 0 57px
+		background light2blue
+		bold()
+
+		p
+			max-width 730px
+			margin 0 auto
+
+	.subsec2
+		padding 60px 0 56px
+		background lightblue
+
+		.subtitle
+			padding-bottom 39px
+
+.content
+	padding-left 89px
+	display flex
+
+	.col
+		width 50%
+
+		.block
+			margin-bottom 75px
+
+			h3, p
+				margin 0 0 0 41px
+				width 450px
+
+#footer
+	padding 60px
+	color white
+	background darkblue
+	display flex
+	flex-wrap wrap
+	gap 32px
+
+	img
+		margin-top -16px
+		margin-right 24px
+
+	#lou-hover
+		margin-left -160px
+		opacity 0
+
+	.block-foot
+		.rdv-button
+			margin-top 20px
+			box-shadow 0 2px 2px rgba(0, 0, 0, 0.5)
+
+			&:hover
+				color lighten(mainblue, 3)
+				box-shadow 0 2px 4px rgba(0, 0, 0, 1)
+
+		p
+			margin 2px 0 0
+
+		.small
+			margin-left 50px
+
+		.b
+			width 76px
+			display inline-block
+			font-weight bold
+
+#copyright
+	opacity 1
+
+.credits
+	opacity 0.2
+
+@media (max-width 1240px)
+	.fixed-size
+		width 100%
+		padding 0
+		left 0
+
+	#intro
+		#presentation-wrapper
+			width 33.3%
+
+			#presentation
+				width 90%
+
+		#infos-map-wrapper
+			width 66.7%
+
+	#menu
+		width 100%
+
+		#buttons
+			.section
+				width 27%
+
+			.section:first-child
+				width 46%
+
+	.content
+		padding-left 30px
+
+		.col
+			.block
+				h3, p
+					width 80%
+
+	#footer
+		img
+			margin-right 0
+
+		.block-foot
+			.small
+				margin-left 0
+
+	#gotop
+		width 10%
+		min-width 48px
+
+	#intro-wrapper
+		max-width 720px
+		margin 0 auto
+
+	#presentation
+		width 100%
+		min-width 0
+
+	#infos-wrapper, #map-wrapper
+		width calc(50% - 20px)
+
+@media (max-width 650px)
+	#intro
+		padding 32px 24px 52px 24px
+
+	#bande
+		background-size 60px
+		background-position 50% 50%
+
+		.head-title:nth-child(1)
+			text-align left
+
+		.head-title:nth-child(2)
+			text-align right
+
+	#infos-wrapper, #map-wrapper
+		width 100%
+
+	.content
+		flex-wrap wrap
+
+		.col
+			width 100%
+
+	#footer
+		#obf2
+			a:hover
+				background-size 0
+
+		img
+			margin 0
+
+	#lou-hover
+		display none
+
+	.fleche, .what-is-it
+		display none
+
+	#menu
+		#buttons
+			gap 16px
+
+			.section:first-child
+				width 34%

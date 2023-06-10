@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'GrmndPLight';
+  src: url('../fonts/premier/GaramondPremrProLtDisp.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'GrmndPReg';
+  src: url('../fonts/premier/GaramondPremrPro.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'GrmndPBold';
+  src: url('../fonts/premier/GaramondPremrProBd.woff2') format('woff2');
+}

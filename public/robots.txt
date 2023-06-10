@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: http://lacaille-osteo-beaune.fr/sitemap.xml
+
+User-agent: *
+Disallow: /links

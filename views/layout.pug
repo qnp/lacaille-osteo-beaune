@@ -1,0 +1,77 @@
+doctype html
+html(lang='fr')
+	head
+
+		meta(name="BR")
+
+		//- prevent phone number auto-detection (Safari iOS & Blackberry)
+		meta(name="format-detection",content="telephone=no")
+		meta(http-equiv="x-rim-auto-match",content="none")
+		meta(name="viewport",content="width=device-width,initial-scale=1.0")
+
+		//- search engines
+		title= title
+		meta(name="description",content=desc_search)
+		meta(name="keywords",content="Lou-Anne Lacaille, Beaune, ostéo, ostéopathe, ostéopathie, ISOstéo, médecine manuelle, médecine douce, soins, bien être, périnatalité, nourrissons, nouveaux-nés, femmes enceintes, post-partum, sportifs, travailleurs, enfants, personnes agées, Chagny, Nuits-saint-Georges, Meursault")
+
+		//- google+
+		meta(itemprop="name",content=title)
+		meta(itemprop="description",content=desc_social)
+		meta(itemprop="image",content=fullURL+social_image)
+
+		//- twitter cards
+		meta(name="twitter:card",content="summary_large_image")
+		meta(name="twitter:title",content=title)
+		meta(name="twitter:description",content=desc_social)
+		meta(name="twitter:image",content=fullURL+social_image)
+		meta(name="twitter:creator",content="@ekqnp")
+
+		//- Open Graph
+		meta(property="og:title",content=title)
+		meta(property="og:type",content="website")
+		meta(property="og:url",content=fullURL)
+		meta(property="og:image",content=fullURL+social_image)
+		meta(property="og:description",content=desc_social)
+		meta(property="og:site_name",content=title)
+
+		//- Rich data (schema.org)
+		script(type='application/ld+json').
+			{
+			  "@context": "http://www.schema.org",
+			  "@type": "MedicalBusiness",
+			  "name": "Lou-Anne Lacaille, Ostéopathe",
+			  "url": "http://lacaille-osteo-beaune.fr/",
+			  "logo": "http://lacaille-osteo-beaune.fr/",
+			  "image": "http://lacaille-osteo-beaune.fr/images/share.png",
+			  "description": "Ostéopathe à Beaune, diplômée d‘ISOstéo, formée en périnatalité",
+			  "address": {
+			    "@type": "PostalAddress",
+			    "streetAddress": "18 rue Jacques de Molay",
+			    "addressLocality": "Beaune",
+			    "postalCode": "21200",
+			    "addressCountry": "France"
+			  },
+			  "geo": {
+			    "@type": "GeoCoordinates",
+			    "longitude": "4.838309",
+			    "latitude": "47.019409"
+			  },
+			  "openingHours": "Mo 09:00-20:00 Tu 09:00-20:00 We 09:00-20:00 Th 09:00-20:00 Fr 09:00-20:00",
+			  "contactPoint": {
+			    "@type": "PostalAddress",
+			    "contactType": "Lou-Anne Lacaille",
+			    "telephone": "0380247447"
+			  }
+			}
+
+		link(rel='stylesheet', href='/stylesheets/style.css')
+
+		script(src='https://code.jquery.com/jquery-1.12.4.min.js')
+		script(src='/javascripts/jquery.animate-colors-min.js')
+		//- script(src='/javascripts/jquery.bez.js')
+		script(src='/javascripts/jquery.map.js')
+		script(src='/javascripts/jquery.menu.js')
+		script(src='/javascripts/jquery.lou.js')
+
+	body
+		block content
