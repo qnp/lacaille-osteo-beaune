@@ -4,7 +4,7 @@ block content
 
 	#wrap-intro
 
-		.fixed-size
+		#top.fixed-size
 
 			#intro
 
@@ -21,8 +21,9 @@ block content
 						p
 							b Formée en périnatalité
 							| &nbsp;pour la prise en charge des
-							b &nbsp;nouveaux-nés, femmes enceintes et femmes en post-partum
-							| &nbsp;par OSTEONAT à Paris.
+							b &nbsp;nouveaux-nés
+							| &nbsp;par Ostéo Bébé à Paris.&nbsp;
+							a(href="#formations") Toutes les formations
 						p
 							b Membre du syndicat des Ostéopathes de France
 							| &nbsp;(UFOF), gage de qualité de pratique et de soin ainsi que d’un respect des principes éthiques envers les patients et la profession d’ostéopathe.
@@ -76,28 +77,33 @@ block content
 
 			#menu(role="menu")
 
-				#gotop
+				a#gotop(href="#top")
 					img(src='images/go-top_arrow.svg')
 
-				#logo
+				a#logo(href="#top")
 					img(src='images/logo.svg')
 
 				#buttons
 					.section
-						a(hrefx='#losteopathie' role="menuitem")
+						a(href='#losteopathie' role="menuitem")
 							span.fleche
 								include ../assets/images/fleche.svg
 							span.sec-text L’ostéopathie
 					.section
-						a(hrefx='#pour-qui' role="menuitem")
+						a(href='#pour-qui' role="menuitem")
 							span.fleche
 								include ../assets/images/fleche.svg
 							span.sec-text Pour qui ?
 					.section
-						a(hrefx='#quand-consulter' role="menuitem")
+						a(href='#quand-consulter' role="menuitem")
 							span.fleche
 								include ../assets/images/fleche.svg
 							span.sec-text Et quand ?
+					#formations-btn.section
+						a(href='#formations' role="menuitem")
+							span.fleche
+								include ../assets/images/fleche.svg
+							span.sec-text Formations
 
 	#content
 
@@ -161,7 +167,7 @@ block content
 							.block
 								h3 L’ostéopathie au travail
 								p Le monde du travail est très souvent une cause de douleurs, que ce soit par une position contraignante, des gestes répétitifs, des ports de charges lourdes ou du stress. Ce sont autant de facteurs qui amènent des troubles musculo-squelettiques et des douleurs.
-								p L’ostéopathie permet un retour à la mobilité articulaire et à l’équilibre du corps pour retrouver ainsi un confort au travail. Elle redonne au corps sa capacité d’adaptation à son environnement et aux contraintes qu’il subit. L’apparition des premières tensions  et des douleurs doit inciter à consulter un ostéopathe qui effectuera ainsi un bilan complet.
+								p L’ostéopathie permet un retour à la mobilité articulaire et à l’équilibre du corps pour retrouver ainsi un confort au travail. Elle redonne au corps sa capacité d’adaptation à son environnement et aux contraintes qu’il subit. L’apparition des premières tensions	et des douleurs doit inciter à consulter un ostéopathe qui effectuera ainsi un bilan complet.
 
 							.block
 								h3 Le nourrisson
@@ -243,7 +249,7 @@ block content
 								.block
 
 									h3 Le système O.R.L. et pulmonaire
-									p Sinusites, vertiges,  troubles de l’équilibre, bourdonnements, céphalées, migraines, bronchites, asthmes, bronchiolites…
+									p Sinusites, vertiges,	troubles de l’équilibre, bourdonnements, céphalées, migraines, bronchites, asthmes, bronchiolites…
 
 							.col
 
@@ -263,6 +269,66 @@ block content
 									h3 Pour le nourrisson
 									p Césarienne, traction de tête, utilisation de forceps, ventouses ou spatules, cordon enroulé autour du cou lors de l’accouchement, grossesse gémellaire, présentation par le siège, par le front ou par la face, prématuré, réanimation du bébé après l’accouchement, accouchement sous péridurale, régurgitations, du mal à téter, très longues tétées, du mal à la mise au sein, rotation préférentielle de tête, tête asymétrique, beaucoup de pleurs, coliques, ne digère pas, se tortille et pleure, du mal à dormir, troubles ORL à répétitions tels que des otites, bronchites à répétitions, respiration bruyante, difficultés à tenir sa tête, se cambre vers l’arrière, crispations, sursauts, petits tremblements, strabisme…
 
+		section#formations
+
+			#wrap-formations-titre
+
+				.fixed-size
+
+					.titre
+
+						h1 Formations
+
+			#wrap-formations-subsec2
+
+				.fixed-size
+
+					.subsec2
+						.content
+
+							.col
+
+								.block
+									h3 2023
+									p Ostéopathie et Orthodontie – Boto, Nicette Sergueef
+
+								.block
+									h3 2021
+									p Ostéopathie tissulaire – Formation Tricot
+
+								.block
+									h3 2019
+									p D.U. Perception, Action et Troubles des Apprentissages (PATA) - Université de Bourgogne Franche-Comté (UBFC)
+
+								.block
+									h3 2018
+									p Formée en périnatalité pour la prise en charge des nouveaux-nés – Ostéo Bébé
+
+								.block
+									h3 2017
+									p Ostéopathie et Energétique : Médecine traditionnelle chinoise – ISOstéo
+
+							.col
+
+								.block
+									h3 2022
+									p Ostéopathie et Infertilité - ISOstéo
+
+								.block
+									h3 2020
+									p Formée en périnatalité pour la prise en charge des nouveaux-nés – Ostéo Bébé
+
+								.block
+									h3 2019
+									p Formée en périnatalité pour la prise en charge des nouveaux-nés – Ostéo Bébé
+
+								.block
+									h3 2017
+									p Ostéopathie et Posturologie
+
+								.block
+									h3 2016
+									p Formée en périnatalité pour la prise en charge des nouveaux-nés, femmes enceintes et femmes en post-partum – Ostéonat
 		#wrap-footer
 
 			.fixed-size
