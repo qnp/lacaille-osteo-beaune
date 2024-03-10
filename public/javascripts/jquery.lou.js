@@ -1,20 +1,3 @@
-(function ($, window, document, undefined) {
-  'use strict';
-
-  var dur = 200;
-
-  $(window).ready(function () {
-    $('#footer img').hover(
-      function () {
-        $('#lou-hover').stop().animate({ opacity: 1 }, 200);
-      },
-      function () {
-        $('#lou-hover').stop().animate({ opacity: 0 }, 200);
-      }
-    );
-  });
-})(jQuery, window, document);
-
 // signature in console
 var styleConsole = function (size, bold) {
   var style = 'color: #222; font-size: ' + size + 'px;';

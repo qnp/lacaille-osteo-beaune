@@ -19,7 +19,11 @@ light()
 	font-family 'GrmndPLight', serif
 
 small()
-	font-size 18px
+	font-size 19px
+
+html, body
+	scroll-behavior smooth
+	scroll-padding-top 67px
 
 body
 	border 0
@@ -40,6 +44,7 @@ a:not(.rdv-button), .sec-text
 	background-position 0 100%
 	background-repeat no-repeat
 	background-size 0 1px
+	transition background-size 0.2s cubic-bezier(.29,.29,0,1)
 
 	&:hover
 		background-size 100% 1px
@@ -120,6 +125,12 @@ section > *
 #wrap-quand-subsec2
 	background lightblue
 
+#wrap-formations-titre
+	background light2blue
+
+#wrap-formations-subsec2
+	background lightblue
+
 #wrap-footer
 	background darkblue
 
@@ -139,6 +150,7 @@ section > *
 	background url('../images/logo.svg') no-repeat 50% 37%
 	height 125px
 	display flex
+	font-size 120%
 
 	.head-title
 		margin-top 38px
@@ -161,6 +173,13 @@ section > *
 #presentation
 	width 50%
 	min-width 430px
+
+	a
+		text-decoration none
+		background-size 100% 1px
+
+		&:hover
+			text-decoration none
 
 #infos-wrapper
 	width calc(25% - 20px)
@@ -189,8 +208,16 @@ section > *
 	opacity 0
 	z-index 998
 
+	a&:hover
+		background-size 0 0
+
 #wrap-wrap-menu
 	width 100%
+	background-color #FFF
+	transition background-color 0.2s ease-in-out
+
+	&.sticked
+		background-color mainblue
 
 #wrap-menu
 	background #FFF
@@ -202,6 +229,27 @@ section > *
 	display flex
 	justify-content center
 	width 100%
+	background-color #FFF
+	transition background-color 0.2s ease-in-out
+
+	&.sticked
+		background-color mainblue
+		position fixed
+
+		#logo
+			cursor pointer
+			pointer-events auto
+
+		#gotop
+			top 90px
+			opacity 1
+
+		#buttons
+			path
+				fill #FFF
+
+			a
+				color #FFF
 
 #menu
 	width width1
@@ -210,7 +258,12 @@ section > *
 
 #logo
 	width 10%
+	min-width 80px
 	text-align center
+	pointer-events none
+
+	a&:hover
+		background-size 0 0
 
 	img
 		width 49px
@@ -227,11 +280,16 @@ section > *
 		bold()
 
 		.fleche
-			margin-right 19px
+			margin-right 12px
+
+		path
+			fill mainblue
+			transition fill 0.2s ease-in-out
 
 		a
 			color mainblue
 			cursor pointer
+			transition color 0.2s ease-in-out
 
 			&:hover
 				text-decoration none
@@ -239,6 +297,7 @@ section > *
 
 		.sec-text
 			background-size 0% 2px
+			transition background-size 0.2s cubic-bezier(.29,.29,0,1)
 
 			&:hover
 				background-size 100% 2px
@@ -277,7 +336,11 @@ section > *
 		padding 122px 0 113px 0
 		text-align center
 
-#quand-consulter
+#formations
+	.titre
+		background light2blue !important
+
+#quand-consulter, #formations
 	color mainblue
 
 	.titre
@@ -326,13 +389,21 @@ section > *
 	flex-wrap wrap
 	gap 32px
 
+	a[href^="mailto:"]
+		text-decoration none
+		background-image none
+
 	img
 		margin-top -16px
 		margin-right 24px
 
 	#lou-hover
-		margin-left -160px
+		margin-left -185px
 		opacity 0
+		transition opacity 0.2s ease-in-out
+
+		&:hover
+			opacity 1
 
 	.block-foot
 		.rdv-button
@@ -350,7 +421,7 @@ section > *
 			margin-left 50px
 
 		.b
-			width 76px
+			width 80px
 			display inline-block
 			font-weight bold
 
@@ -379,12 +450,6 @@ section > *
 	#menu
 		width 100%
 
-		#buttons
-			.section
-				width 27%
-
-			.section:first-child
-				width 46%
 
 	.content
 		padding-left 30px
@@ -402,9 +467,15 @@ section > *
 			.small
 				margin-left 0
 
+		#lou-hover
+			margin-left -160px
+
 	#gotop
 		width 10%
-		min-width 48px
+		min-width 80px
+		top -100%
+		opacity 0
+		transition opacity 0.2s ease-in-out
 
 	#intro-wrapper
 		max-width 720px
@@ -416,6 +487,10 @@ section > *
 
 	#infos-wrapper, #map-wrapper
 		width calc(50% - 20px)
+
+@media (max-width 900px)
+	#formations-btn
+		display none
 
 @media (max-width 650px)
 	#intro
@@ -460,3 +535,8 @@ section > *
 
 			.section:first-child
 				width 34%
+
+@media (max-width 460px)
+	#menu
+		.section
+			font-size 80%
