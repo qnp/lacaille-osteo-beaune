@@ -76,7 +76,7 @@ bm
 
 h1
 	bold()
-	font-size 53.5px
+	font-size 53px
 	margin 0
 
 h2
@@ -295,6 +295,7 @@ section > *
 #buttons
 	width 80%
 	padding-top 8px
+	padding-right 8px
 	display flex
 
 	.section
@@ -324,6 +325,9 @@ section > *
 
 			&:hover
 				background-size 100% 2px
+
+.titre
+	margin 0 16px
 
 #losteopathie
 	color mainblue
@@ -515,7 +519,7 @@ section > *
 	#formations-btn
 		display none
 
-@media (max-width 650px)
+@media (max-width 680px)
 	#intro
 		padding 32px 24px 52px 24px
 
@@ -560,6 +564,62 @@ section > *
 				width 34%
 
 @media (max-width 460px)
+	#losteopathie, #pour-qui, #quand-consulter, #formations
+		.titre
+			padding 54px 0
+
+	#quand-consulter
+		.subsec1
+			padding-top 12px
+
+		.subsec2
+			padding-top 12px
+			padding-bottom 0px
+
+			.subtitle
+				padding-bottom 0
+
+	#formations
+		.subsec2
+			padding-top 46px
+			padding-bottom 0px
+
 	#menu
 		.section
 			font-size 80%
+
+	.content .col .block
+		margin-bottom 40px
+
+@media (max-width 420px)
+	#gotop
+		display none
+
+	#logo
+		.logo
+			opacity 0
+
+		.finger
+			opacity 1
+
+	.content
+		.subsec2 &
+			padding 0
+
+		.col
+			.block
+				h3, p
+					width 100%
+					margin 0
+
+
+@media (max-width 380px)
+	#bande
+		font-size 100%
+
+	#logo, #gotop
+		min-width 64px
+
+	#logo
+		img
+			width 40px
