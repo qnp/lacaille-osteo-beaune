@@ -37,14 +37,13 @@
       }
     }
 
-    $('#logo, #gotop').hover(
-      function () {
-        $logo.find('img').attr('src', 'images/go-top.svg');
-      },
-      function () {
-        $logo.find('img').attr('src', 'images/logo.svg');
-      }
-    );
+    $('#logo, #gotop')
+      .on('mouseenter', function () {
+        $logo.addClass('hover');
+      })
+      .on('mouseleave', function () {
+        $logo.removeClass('hover');
+      });
   };
 
   $(document).ready(function () {

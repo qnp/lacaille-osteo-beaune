@@ -261,11 +261,34 @@ section > *
 	min-width 80px
 	text-align center
 	pointer-events none
+	position relative
+	display flex
+	justify-content center
+	align-items center
+
+	.logo
+		opacity 1
+		margin-bottom 4px
+
+	.finger
+		opacity 0
+		margin-bottom 7px
+
+	.logo, .finger
+		transition opacity 0.2s ease-in-out
+
+	&.hover
+		.logo
+			opacity 0
+
+		.finger
+			opacity 1
 
 	a&:hover
 		background-size 0 0
 
 	img
+		position absolute
 		width 49px
 		height 42px
 
